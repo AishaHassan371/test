@@ -14,7 +14,7 @@ return [
     */
 
     'defaults' => [
-        'guard' => 'web',
+        'guard' => 'admin',
         'passwords' => 'users',
     ],
 
@@ -70,7 +70,7 @@ return [
         ],
 
         'admins' => [
-            'driver' => 'eloquent',
+            'driver' => 'eloquent',  //We are using eloquent model
             'model' => App\Models\Admin::class,
         ],
 
